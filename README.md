@@ -5,16 +5,11 @@ The Sound Effects Box is an interactive tool that allows users to play a variety
 ## Features
 
 - Play sound effects with a simple click.
-- Choose from a selection of pre-loaded sound effects.
-- Add your own custom sound effects.
-- Adjust the volume and duration of the sounds.
 
 ## How to Use
 
 1. Open the Sound Effects Box in your application.
 2. Click on one of the buttons to play a sound effect.
-3. Explore options to adjust the volume and duration of the sound if desired.
-4. Add your own custom sound effects by following the instructions in the interface.
 
 ## Technologies Used
 
