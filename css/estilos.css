@@ -1,0 +1,74 @@
+:root {
+  --cinza: #F7A07C;
+  --cor-fonte: #fb52d9;
+  --cor-destaque: #ff00cc81;
+  --branca: #fff;
+  --luz: rgb(229, 255, 0);
+}
+
+html {
+  color-scheme: light;
+}
+
+body {
+  align-items: center;
+  background: radial-gradient(circle, #F77C94, #ffffff);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  font-family: 'Nunito';
+  font-weight: 300;
+  min-height: 100vh;
+}
+
+h1 {
+  color: var(--cor-fonte);
+  margin-bottom: 20px;
+  font-size: 3rem;
+  font-family: 'Nunito';
+  font-weight: 800;
+}
+
+.teclado {
+  background: linear-gradient(to bottom, #F78A7C 0%,#F77C94 100%);
+  box-shadow: 6px 8px 0 6px #F7A07C, 10px 10px 10px #ffffff;
+  border-radius: 30px;
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 10px;
+}
+
+.tecla {
+  background-color: var(--branca);
+  border-radius: 30px;
+  box-shadow: 3px 3px 0 var(--cinza);
+  color: var(--cor-fonte);
+  cursor: pointer;
+  height: 120px;
+  font-size: 1.75em;
+  font-weight: bold;
+  line-height: 120px;
+  text-align: center;
+  width: 120px;
+}
+
+.tecla.ativa,
+.tecla:active {
+  background-color: var(--cor-fonte);
+  border: 4px solid  var(--cor-fonte);
+  box-shadow: 3px 3px 0 var(--cor-destaque) inset;
+  color: var(--branca);
+  outline: none;
+}
+
+.tecla.focus,
+.tecla:focus {
+  outline: none;
+  box-shadow: 1px 1px 10px var(--luz);
+}
+
+.tecla.active:focus,
+.tecla:active:focus {
+  box-shadow: 3px 3px 0 var(--cor-destaque) inset, 1px 1px 10px var(--luz);
+}
